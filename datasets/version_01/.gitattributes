@@ -1,0 +1,7 @@
+qualifiers_wikidata_kgtk.tsv.gz filter=lfs diff=lfs merge=lfs -text
+scholarly_articles_in_wikidata.tsv.gz filter=lfs diff=lfs merge=lfs -text
+scholarly_articles_not_in_wikidata.tsv.gz filter=lfs diff=lfs merge=lfs -text
+covid_kgtk_blender_mentions_qualifiers.tsv.gz filter=lfs diff=lfs merge=lfs -text
+covid_kgtk_blender_mentions_with_labels.tsv.gz filter=lfs diff=lfs merge=lfs -text
+entities_in_wikidata.tsv.gz filter=lfs diff=lfs merge=lfs -text
+entities_not_in_wikidata.tsv.gz filter=lfs diff=lfs merge=lfs -text
