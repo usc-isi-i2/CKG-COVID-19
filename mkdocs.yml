@@ -1,0 +1,11 @@
+site_name: CKG Covid-19
+nav:
+  - CKG Datasets: index.md
+theme:
+  name: windmill
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
