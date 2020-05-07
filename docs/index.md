@@ -54,7 +54,7 @@ We describe the contents and format of the files in the dataset in the following
 - [Entities not in Wikidata](entities_not_in_wikidata.md)
 - [Qualifiers for Scientific Articles and Entities in wikidata](qualifiers_wikidata_kgtk.md)
 - [Blender Mentions](covid_kgtk_blender_mentions_with_labels.md)
-- [Blender Mentions Qualifiers](entities_not_in_wikidata.md)
+- [Blender Mentions Qualifiers](covid_kgtk_blender_mentions_qualifiers.md)
 
 
 
