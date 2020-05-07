@@ -9,6 +9,31 @@ To make the KG easy to use, our primary dataset is published as an edge-list in 
 
 ![Covid-19 Knowledge Graph](covid_kg_diagram.png "Covid-19 Knowledge Graph")
 
+## New Properties in the Covid KG
+
+We have added new properties as per the above diagram:
+
+- entities mentioned in the scientific articles in CORD-19 corpus
+- text fragments where entities are extracted from in the article
+- a property `text` to store the text of a text fragment.
+
+The following properties are added ,
+
+| property | label                       | descriptions                                                          |
+|----------|-----------------------------|-----------------------------------------------------------------------|
+| P2020001 | "Text Fragment"@en          | text fragment of a scholarly article                                  |
+| P2020002 | "mentions gene"@en          | gene mentioned in an article or text fragment                         |
+| P2020003 | "mentions disease"@en       | disease mentioned in an article or text fragment                      |
+| P2020004 | "mentions chemical"@en      | chemical mentioned in an article or text fragment                     |
+| P2020005 | "mentions genus"@en         | genus mentioned in an article or text fragment                        |
+| P2020006 | "mentions species"@en       | species mentioned in an article or text fragment                      |
+| P2020007 | "mentions strain"@en        | strain mentioned in an article or text fragment                       |
+| P2020008 | "attributed to software"@en | software used to extract information from an article or text fragment |
+| P2020009 | "mentions mutation"@en      | mutation mentioned in an article or text fragment                     |
+| P2020010 | "mentions cellline"@en      | cellline mentioned in an article or text fragment                     |
+| P2020011 | "mentions domainmotif"@en   | domain motif mentioned in an article or text fragment                 |
+| P2020012 | "text"@en                   | text in a text fragment                                               |
+
 ## Covid-19 Dataset
 
 The data files are available to download from the folder `datasets/version_**`, current version is `01`.
