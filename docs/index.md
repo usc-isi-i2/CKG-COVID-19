@@ -5,7 +5,7 @@ We are building easy to use knowledge graphs (KG) about the scientific articles 
 To make the KG easy to use, our primary dataset is published as an edge-list in TSV format. This dataset can be directly imported into Pandas, relational databases, graph software, etc. In addition, we offer the dataset in a public SPARQL endpoint using the Wikidata SPARQL platform, as an RDF dump and as a file that directly imports into Neo4J.
 
 
-## Covid-19 KG
+## Covid-19 Knowledge Graph
 <a name="covid_kg_diagram" />
 
 ![Covid-19 Knowledge Graph](covid_kg_diagram.png "Covid-19 Knowledge Graph")
