@@ -1,7 +1,7 @@
 ## Blender Mentions Qualifiers
 
 The file, `covid_kgtk_blender_mentions_qualifiers.tsv.gz` contains the qualifiers on the 
-Blender Mentions edges as per the Covid-19 diagram.
+Blender Mentions edges as per the [Covid-19 KG diagram](index.md#covid_kg_diagram).
 
 Sample,
 

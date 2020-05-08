@@ -1,6 +1,14 @@
 site_name: CKG Covid-19
 nav:
   - CKG Datasets: index.md
+  - Scientific Articles in Wikidata: scientific_articles_in_wikidata.md
+  - Scientific Articles not in Wikidata: scientific_articles_not_in_wikidata.md
+  - Entities in Wikidata: entities_in_wikidata.md
+  - Entities not in Wikidata: entities_not_in_wikidata.md
+  - Qualifiers for Scientific Articles and Entities in wikidata: qualifiers_wikidata_kgtk.md
+  - Blender Mentions: covid_kgtk_blender_mentions_with_labels.md
+  - Blender Mentions Qualifiers : covid_kgtk_blender_mentions_qualifiers.md
+
 theme:
   name: windmill
 markdown_extensions:

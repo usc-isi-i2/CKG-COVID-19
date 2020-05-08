@@ -6,6 +6,7 @@ To make the KG easy to use, our primary dataset is published as an edge-list in 
 
 
 ## Covid-19 KG
+<a name="covid_kg_diagram" />
 
 ![Covid-19 Knowledge Graph](covid_kg_diagram.png "Covid-19 Knowledge Graph")
 

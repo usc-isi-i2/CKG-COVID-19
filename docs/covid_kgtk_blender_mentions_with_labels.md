@@ -1,7 +1,7 @@
 ## Blender Mentions
 
 The file, `covid_kgtk_blender_mentions_with_labels.tsv.gz`, contains the new property edges as per the
-Covid-19 KG diagram.
+[Covid-19 KG diagram](index.md#covid_kg_diagram).
 
 In addition to the the columns `id`, `node1`, `property` and `node`, this file contains
 3 more columns,
