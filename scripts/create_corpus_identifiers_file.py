@@ -37,16 +37,16 @@ def pubmed_analysis():
                 seen[pmcid] = 1
 
                 if 'PMC' in pmcid:
-                    corpus_identifiers_f.write('{}\t{}\n'.format(json.dumps(pmcid[3:]), 'P932'))
+                    corpus_identifiers_f.write('{}\t{}\n'.format(json.dumps(pmcid[3:]).strip(), 'P932'))
                 else:
-                    corpus_identifiers_f.write('{}\t{}\n'.format(json.dumps(pmcid), 'P932'))
+                    corpus_identifiers_f.write('{}\t{}\n'.format(json.dumps(pmcid).strip(), 'P932'))
 
         pmid = x.get('pmid', None)  # P698
         if pmid:
             pmid = str(pmid)
             if pmid not in seen:
                 seen[pmid] = 1
-                corpus_identifiers_f.write('{}\t{}\n'.format(json.dumps(pmid), 'P698'))
+                corpus_identifiers_f.write('{}\t{}\n'.format(json.dumps(pmid).strip(), 'P698'))
 
         passages = x.get('passages', [])
 
@@ -73,10 +73,10 @@ def pubmed_analysis():
 
                                         if 'MESH' in identifier:
                                             corpus_identifiers_f.write(
-                                                '{}\t{}\n'.format(json.dumps(identifier[5:]), ids_dict[type]))
+                                                '{}\t{}\n'.format(json.dumps(identifier[5:]).strip(), ids_dict[type]))
                                         else:
                                             corpus_identifiers_f.write(
-                                                '{}\t{}\n'.format(json.dumps(identifier), ids_dict[type]))
+                                                '{}\t{}\n'.format(json.dumps(identifier).strip(), ids_dict[type]))
 
 
 pubmed_analysis()
