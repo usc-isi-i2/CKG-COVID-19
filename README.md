@@ -6,5 +6,6 @@ To make the KG easy to use, our primary dataset is published as an edge-list in 
 
 Links to the downloads will be published in the first week of May, 2020.
 
+python -m ipykernel install --user --name=ckg_env
 
 [Read the Docs](https://ckg-covid-19.readthedocs.io/en/latest/#)
