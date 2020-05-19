@@ -14,7 +14,7 @@ def pubmed_analysis():
     :return:
     """
 
-    corpus_identifiers_f = open('corpus-identifiers.tsv', 'w')
+    corpus_identifiers_f = open('/Users/amandeep/Github/CKG-Covid/datasets/sandbox/corpus-identifiers.tsv', 'w')
     corpus_identifiers_f.write('node2\tlabel\n')
 
     ids_dict = {
