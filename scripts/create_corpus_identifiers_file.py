@@ -66,12 +66,13 @@ def pubmed_analysis():
                             identifiers = [identifiers]
 
                         for identifier in identifiers:
+                            identifier = identifier.replace('*', '').replace('_', '')
                             if type in ids_dict:
                                 if identifier:
                                     if '{}@{}'.format(type, identifier) not in seen:
                                         seen['{}@{}'.format(type, identifier)] = 1
 
-                                        if 'MESH' in identifier:
+                                        if 'MESH' in identifier or 'OMIM' in identifier:
                                             corpus_identifiers_f.write(
                                                 '{}\t{}\n'.format(json.dumps(identifier[5:]).strip(), ids_dict[type]))
                                         else:
