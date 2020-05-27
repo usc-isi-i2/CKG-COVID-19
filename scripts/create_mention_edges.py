@@ -1,9 +1,9 @@
-from glob import glob
-import pandas as pd
 import json
+import pandas as pd
+from glob import glob
+from typing import List
 from scripts.covid_kg_classes import create_scholarly_article
 from scripts.covid_kg_classes import TextFragment, Entity, Article, ScholarlyArticle
-from typing import List
 
 entity_type_to_wiki_property_map = {
     'species': 'P685',
@@ -62,7 +62,7 @@ class CreateMentionEdges(object):
 
     def build_mention_edges(self):
         papers = self.get_papers_list()
-        print('Total number of papers in the corpus: ',len(papers))
+        print('Total number of papers in the corpus: ', len(papers))
         identifier_dict = self.create_identifier_to_qnode_dict()
 
         articles = []
