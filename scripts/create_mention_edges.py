@@ -62,7 +62,7 @@ class CreateMentionEdges(object):
 
     def build_mention_edges(self):
         papers = self.get_papers_list()
-        print(len(papers))
+        print('Total number of papers in the corpus: ',len(papers))
         identifier_dict = self.create_identifier_to_qnode_dict()
 
         articles = []
@@ -202,3 +202,4 @@ class CreateMentionEdges(object):
         papers_w.to_csv('{}/scholarly_articles_not_in_wikidata.tsv'.format(output_path), sep='\t', index=False,
                         header=True,
                         columns=['id', 'node1', 'label', 'node2'])
+        print('Done!')
